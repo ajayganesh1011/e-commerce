@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const base_url="https://crud-server-9n64.onrender.com/"
+const base_url="https://crud-server-9n64.onrender.com"
 
 export const addContactApi=async(data)=>{
     return await axios.post(`${base_url}/contacts`,data)

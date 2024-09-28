@@ -46,7 +46,7 @@ function Create() {
         setShow(false);
         navigate("/")
     }
-    const handleShow = () => setShow(true);
+    const handleShow  = () => setShow(true);
     return (
         <>
             <Modal
