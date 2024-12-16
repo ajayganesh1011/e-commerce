@@ -1,0 +1,248 @@
+/* App.css */
+
+/* Main container styles */
+.container {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h1 {
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Card Styling */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for product list */
+.product-list {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Product Card Styling */
+.product-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image Styling */
+.product-image {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.1);
+}
+
+/* Button Customization */
+.btn-custom {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(45deg, #0056b3, #003f7f);
+    transform: translateY(-3px);
+}
+
+/* Responsive Grid Adjustments */
+@media (max-width: 768px) {
+    .product-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Product Detail Styling */
+.product-detail-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.product-image {
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+}
+
+/* Typography */
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.product-description {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.product-category {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Back Button Styling */
+.btn-back {
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+    background-color: #6c757d;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-back:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-detail-card {
+        text-align: center;
+    }
+
+    .product-image {
+        height: 250px;
+    }
+
+    .product-title {
+        font-size: 1.5rem;
+    }
+
+    .product-price {
+        font-size: 1.2rem;
+    }
+}
+
+/* Search Bar Styling */
+.search-bar-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.search-input {
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-left: 30px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: #007bff;
+    outline: none;
+}
+
+.input-group-text {
+    cursor: pointer;
+    font-size: 18px;
+    color: #6c757d;
+    background-color: transparent;
+    border: none;
+    transition: color 0.2s ease;
+}
+
+.input-group-text:hover {
+    color: #007bff;
+}
+
+/* Clear Button when typing */
+.clear-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-bar-container {
+        padding: 0 15px;
+    }
+}
+
